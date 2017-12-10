@@ -15,10 +15,8 @@ attr_reader :pword, :bank_balance
     @bank_balance = bank_balance
   end
 
-
   def add_to_basket(item)
      @basket << item
-    end
   end
 
   def return_to_store(item)
@@ -52,6 +50,6 @@ attr_reader :pword, :bank_balance
         return "Thank you for shopping with us today, your checkout total is #{display_basket_value}"
           else
             return "I'm sorry, you are skint. Please leave my shop immediately before I call the police."
-          end
       end
-  end
+    end
+end

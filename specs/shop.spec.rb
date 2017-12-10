@@ -4,8 +4,7 @@ require_relative('../shop')
 require_relative('../customer')
 
 class TestShop < MiniTest::Test
-
-
+  
   def setup
     @hdmi = Stock.new("HDMI Cable", 5.99, 5000983746352, 56)
     @mouse = Stock.new("Mighty Mouse", 7.50, 5000392856632, 10)
@@ -39,7 +38,7 @@ class TestShop < MiniTest::Test
       assert_equal("7-4", @lees_shop.check_opening_hrs(:Saturday))
     end
 
-
+end
 
 
 

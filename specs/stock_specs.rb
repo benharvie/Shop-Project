@@ -4,7 +4,6 @@ require_relative('../stock')
 
 class TestStock < MiniTest::Test
 
-
   def setup
     @hdmi = Stock.new("HDMI Cable", 5.99, 5000983746352, 56)
     @mouse = Stock.new("Mighty Mouse", 7.50, 5000392856632, 10)
@@ -35,8 +34,5 @@ class TestStock < MiniTest::Test
     def test_to_stockholding_when_item_returned
       assert_equal(58, @hdmi.return(2))
     end
-
-
-
 
 end
